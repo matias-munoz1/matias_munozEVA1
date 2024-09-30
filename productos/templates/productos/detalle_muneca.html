@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muñeca - MatiSHOP</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+
+    <!-- Navegación -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="{% url 'index' %}">MatiSHOP</a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'index' %}">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'index' %}">Categorias</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Detalle de la Muñeca -->
+    <div class="container mt-5">
+        <h2 class="text-center mb-4">Muñeca Articulada con Accesorios</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <img src="https://images.unsplash.com/photo-1717054863779-e3043da7677a?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="img-fluid" alt="Muñeca">
+            </div>
+            <div class="col-md-6">
+                <h4>Características de la Muñeca:</h4>
+                <ul>
+                    <li>Muñeca de 30 cm con articulaciones móviles.</li>
+                    <li>Incluye varios accesorios, como ropa y zapatos.</li>
+                    <li>Disponible en varios estilos y colores.</li>
+                    <li>Material resistente, seguro para niños mayores de 3 años.</li>
+                </ul>
+                <p>La muñeca articulada es perfecta para que los niños desarrollen su imaginación y creatividad. Con múltiples accesorios y ropa intercambiable, proporciona una experiencia de juego enriquecedora y divertida.</p>
+                <a href="{% url 'juguetes' %}" class="btn btn-secondary mt-3">Volver a Juguetes</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

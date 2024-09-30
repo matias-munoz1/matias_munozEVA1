@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juguetes - MatiSHOP</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Estilo para las imágenes de los productos */
+        .card-img-top {
+            height: 250px; /* Altura fija para todas las imágenes */
+            object-fit: cover; /* Ajusta la imagen para llenar el contenedor sin deformarse */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navegación -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="{% url 'index' %}">MatiSHOP</a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'index' %}">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'index' %}">Categorias</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Productos de Juguetes -->
+    <div class="container mt-5">
+        <h2 class="text-center mb-4">Productos de Juguetes</h2>
+        <div class="row">
+            <div class="col-md-4 mb-3">
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1511377537649-c17e440ef4b2?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="Producto 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Auto de Juguete</h5>
+                        <p class="card-text">Auto de juguete con control remoto, ideal para niños.</p>
+                        <a href="{% url 'detalle_auto' %}" class="btn btn-primary">Ver más</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1717054863779-e3043da7677a?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="Producto 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Muñeca</h5>
+                        <p class="card-text">Muñeca articulada con accesorios incluidos.</p>
+                        <a href="{% url 'detalle_muneca' %}" class="btn btn-primary">Ver más</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1675339424109-06da9790aafb?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="Producto 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Set de Bloques de Construcción</h5>
+                        <p class="card-text">Set de bloques coloridos para desarrollar la creatividad.</p>
+                        <a href="{% url 'detalle_bloques' %}" class="btn btn-primary">Ver más</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="{% url 'index' %}" class="btn btn-secondary mt-3">Volver al Inicio</a>
+    </div>
+
+</body>
+</html>

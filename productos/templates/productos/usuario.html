@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Identificación de Usuario - MatiSHOP</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: Arial, sans-serif;
+        }
+        .card-user {
+            background-color: #e9ecef;
+            border: none;
+            padding: 20px;
+            max-width: 400px;
+            margin: auto;
+            margin-top: 50px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 15px;
+        }
+        .card-user img {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+        }
+        .card-user h5 {
+            margin-top: 15px;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        .card-user p {
+            color: #333;
+            margin-bottom: 5px;
+        }
+        .btn-back {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .btn-back:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Identificación del Usuario -->
+    <div class="card-user">
+        <img src="https://i.ibb.co/gPW2NnR/file.jpg" alt="Usuario">
+        <h5>Matias Muñoz</h5>
+        <p>Email: mmunozs1996@gmail.com</p>
+        <p>Teléfono: 965184268</p>
+        <p>Dirección: Temuco</p>
+        <p>Carrera: Analista Programador</p>
+        <a href="{% url 'index' %}" class="btn-back mt-4 d-block">Volver al Inicio</a>
+    </div>
+
+</body>
+</html>

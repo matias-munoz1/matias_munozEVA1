@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portátil - MacBook</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+
+    <!-- Navegación -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="{% url 'index' %}">MatiSHOP</a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'index' %}">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'index' %}">Categorias</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Detalle del Portátil - MacBook -->
+    <div class="container mt-5">
+        <h2 class="text-center mb-4">Portátil - MacBook Pro</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <img src="https://images.unsplash.com/photo-1420406676079-b8491f2d07c8?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="img-fluid" alt="MacBook Pro">
+            </div>
+            <div class="col-md-6">
+                <h4>Características del MacBook Pro:</h4>
+                <ul>
+                    <li>Pantalla Retina de 13.3 pulgadas con True Tone</li>
+                    <li>Procesador Apple M1 Chip de 8 núcleos</li>
+                    <li>Memoria RAM de 8GB y Almacenamiento SSD de 256GB</li>
+                    <li>Batería de larga duración de hasta 20 horas</li>
+                    <li>Magic Keyboard retroiluminado</li>
+                    <li>Touch ID para mayor seguridad</li>
+                </ul>
+                <p>El MacBook Pro con el chip M1 de Apple ofrece un rendimiento increíble, duración prolongada de la batería y una experiencia visual sin igual con su pantalla Retina. Perfecto para quienes buscan potencia y eficiencia en un diseño compacto.</p>
+                <a href="{% url 'electronica' %}" class="btn btn-secondary mt-3">Volver a Electrónica</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

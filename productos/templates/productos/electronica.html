@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electrónica - MatiSHOP</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Estilo para las imágenes de los productos */
+        .card-img-top {
+            height: 250px; /* Altura fija para todas las imágenes */
+            object-fit: cover; /* Ajusta la imagen para llenar el contenedor sin deformarse */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navegación -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="{% url 'index' %}">MatiSHOP</a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'index' %}">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'index' %}">Categorias</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Productos Electrónica -->
+    <div class="container mt-5">
+        <h2 class="text-center mb-4">Productos de Electrónica</h2>
+        <div class="row">
+            <div class="col-md-4 mb-3">
+                <div class="card">
+                    <img src="https://plus.unsplash.com/premium_photo-1681336999500-e4f96fe367f8?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="Producto 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Teléfono</h5>
+                        <p class="card-text">Lo último en tecnología de teléfonos móviles.</p>
+                        <a href="{% url 'detalle_telefono' %}" class="btn btn-primary">Ver más</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1420406676079-b8491f2d07c8?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="Producto 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Portátil</h5>
+                        <p class="card-text">Potentes portátiles para el día a día y el trabajo.</p>
+                        <a href="{% url 'detalle_portatil' %}" class="btn btn-primary">Ver más</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="card">
+                    <img src="https://plus.unsplash.com/premium_photo-1680371835462-0bd2c8b26846?q=80&w=1984&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="Producto 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Tablet</h5>
+                        <p class="card-text">Las mejores tablets para entretenimiento y trabajo.</p>
+                        <a href="{% url 'detalle_tablet' %}" class="btn btn-primary">Ver más</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="{% url 'index' %}" class="btn btn-secondary mt-3">Volver al Inicio</a>
+    </div>
+
+</body>
+</html>

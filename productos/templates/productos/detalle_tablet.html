@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablet - iPad</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+
+    <!-- Navegación -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="{% url 'index' %}">MatiSHOP</a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'index' %}">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'index' %}">Categorias</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Detalle del iPad -->
+    <div class="container mt-5">
+        <h2 class="text-center mb-4">Tablet - iPad</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <img src="https://plus.unsplash.com/premium_photo-1680371835462-0bd2c8b26846?q=80&w=1984&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="img-fluid" alt="iPad">
+            </div>
+            <div class="col-md-6">
+                <h4>Características del iPad:</h4>
+                <ul>
+                    <li>Pantalla Liquid Retina de 10.2 pulgadas con True Tone</li>
+                    <li>Chip A13 Bionic con Neural Engine</li>
+                    <li>Compatible con el Apple Pencil (1ª generación)</li>
+                    <li>Memoria interna de 64GB o 256GB</li>
+                    <li>Cámara trasera de 12MP y cámara frontal de 7MP</li>
+                    <li>Batería de hasta 10 horas de duración</li>
+                </ul>
+                <p>El iPad es la tablet perfecta para el entretenimiento y la productividad. Con su potente chip A13 y compatibilidad con el Apple Pencil, puedes realizar todo tipo de tareas desde escribir, dibujar hasta hacer videollamadas con excelente calidad de imagen.</p>
+                <a href="{% url 'electronica' %}" class="btn btn-secondary mt-3">Volver a Electrónica</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

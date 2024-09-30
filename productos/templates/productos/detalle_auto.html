@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto de Juguete - MatiSHOP</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+
+    <!-- Navegación -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="{% url 'index' %}">MatiSHOP</a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'index' %}">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'index' %}">Categorias</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Detalle del Auto de Juguete -->
+    <div class="container mt-5">
+        <h2 class="text-center mb-4">Auto de Juguete con Control Remoto</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <img src="https://images.unsplash.com/photo-1511377537649-c17e440ef4b2?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="img-fluid" alt="Auto de Juguete">
+            </div>
+            <div class="col-md-6">
+                <h4>Características del Auto de Juguete:</h4>
+                <ul>
+                    <li>Control remoto con un alcance de 30 metros.</li>
+                    <li>Batería recargable con duración de 40 minutos.</li>
+                    <li>Luces delanteras y traseras.</li>
+                    <li>Velocidad máxima de 15 km/h.</li>
+                </ul>
+                <p>El auto de juguete es perfecto para niños a partir de 5 años. Con luces y velocidad ajustable, ofrece una experiencia emocionante y divertida.</p>
+                <a href="{% url 'juguetes' %}" class="btn btn-secondary mt-3">Volver a Juguetes</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
